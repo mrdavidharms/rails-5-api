@@ -5,6 +5,7 @@ class TodosController < ApplicationController
   # GET /todos.json
   def index
     @todos = Todo.all
+    render json: Todo.all
   end
 
   # GET /todos/1
